@@ -5,8 +5,9 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 import numpy as np
 
-
+#class of tumor
 class_names = ["glioma", "meningioma", "no-tumor", "pituitary"]
+#load the trained model
 model = load_model("./assets/brain_tumor_model_1.h5")
 
 app = Flask(__name__)
@@ -17,15 +18,21 @@ def index():
 
 @app.route('/', methods=['POST'])
 def predict():
+    #get the image
     imagefile = request.files['imagefile']
     image_path = "./images/" + imagefile.filename
     imagefile.save(image_path)
     
+    #load the image
     img = load_img(image_path, target_size=(224,224))
+    #convert into numpy array
     img = img_to_array(img)
+    #scale the image
     image = img / 255.0
     image = image.astype(np.float32)
+    #reshape the image for predcition
     image = image.reshape(1, 224, 224, 3)
+    #prediction
     prediction = model.predict(image)
     final = np.argmax(prediction)
     classi = class_names[final]
