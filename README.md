@@ -24,6 +24,8 @@ This project focuses on enhancing the interpretability of machine learning model
 * Model Development: A machine learning model, is trained on a brain tumor classification. The model serves as the black box whose predictions we aim to interpret using LIME.
 
 * LIME Implementation: The LIME algorithm is implemented to generate local explanations for individual predictions made by the model. LIME approximates the behavior of the black box model by creating interpretable surrogate models on local subsets of the data. These surrogate models provide insights into how the black box model arrives at its predictions.
+
+
 ## DataSet
 https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 
@@ -45,10 +47,4 @@ https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 
 ### Confusion matrix for explaining the accuracy of model
 ![App Screenshot](https://github.com/MorningStarTM/brain_cancer_detection/blob/main/screenshots/cm.PNG?raw=true)
-## DataSet
-https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
-
-## Models
-* Custom CNN Model 
-* VGG-16
 
