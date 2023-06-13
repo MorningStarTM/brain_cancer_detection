@@ -16,6 +16,14 @@ This project focuses on the development of a deep learning model for brain tumor
 * Model Evaluation: The trained model is evaluated using  evaluation metrics such as accuracy and confusion matrix. The model's performance is assessed on a separate test dataset to measure its effectiveness in classifying brain tumor images.
 
 
+
+
+## Explainable AI for Model Interpretability using LIME
+This project focuses on enhancing the interpretability of machine learning models using an Explainable AI (XAI) technique called LIME (Local Interpretable Model-Agnostic Explanations). The goal is to provide meaningful explanations for the predictions made by complex machine learning models, thereby increasing trust, transparency, and understanding of the underlying decision-making process.
+
+* Model Development: A machine learning model, is trained on a brain tumor classification. The model serves as the black box whose predictions we aim to interpret using LIME.
+
+* LIME Implementation: The LIME algorithm is implemented to generate local explanations for individual predictions made by the model. LIME approximates the behavior of the black box model by creating interpretable surrogate models on local subsets of the data. These surrogate models provide insights into how the black box model arrives at its predictions.
 ## DataSet
 https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 
@@ -24,7 +32,7 @@ https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 * VGG-16
 
 
-## Screenshots
+## Inteprete the model using LIME - XAI
 
 ### 1st Explaination of XAI
 ![App Screenshot](https://github.com/MorningStarTM/brain_cancer_detection/blob/main/screenshots/XAI-2.PNG?raw=true)
@@ -37,3 +45,10 @@ https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 
 ### Confusion matrix for explaining the accuracy of model
 ![App Screenshot](https://github.com/MorningStarTM/brain_cancer_detection/blob/main/screenshots/cm.PNG?raw=true)
+## DataSet
+https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+
+## Models
+* Custom CNN Model 
+* VGG-16
+
