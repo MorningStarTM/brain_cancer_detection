@@ -32,6 +32,7 @@ https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
 ## Models
 * Custom CNN Model 
 * VGG-16
+* ResNet50
 
 
 ## Inteprete the model using LIME - XAI
